@@ -49,7 +49,7 @@ In identifying the top five selling products Excel's VLOOKUP function was used t
 The analysis points to a varied basket of products leading the revenue charts, hinting at a broad range of consumer tastes and preferences. This diversity offers multiple vectors for strategic marketing and inventory focus. The findings from the pivot table analysis provide a clear view of the high-performing products within the dataset. A business can utilize this sort of information to refine its sales strategy, perhaps by focusing on upselling, cross-selling, and optimizing stock levels for these key products. Furthermore, the insight into the product mix can inform future product development and procurement strategies, ensuring that the offerings align with proven consumer demand.
 
 
-**Categories generating the most revenue**
+**Categories that generate the most revenue**
 
 
 
