@@ -18,9 +18,9 @@ What is the average order value?
 
 Which customers have the highest purchase frequency?
 
-Are there seasonal trends in sales?
+Are there any variations in sales trend? 
 
-How does the sales performance vary across different regions or countries?
+How does the sales performance vary across different countries?
 
 What is the average product price across different categories?
 
@@ -50,6 +50,103 @@ The analysis points to a varied basket of products leading the revenue charts, h
 
 
 **Categories that generate the most revenue**
+
+The endeavor to pinpoint which product categories yield the highest revenue has culminated in definitive insights, achieved through a methodical approach to data integration and analysis. By leveraging the VLOOKUP function, critical category identifiers such as 'CategoryID' and 'CategoryName' were seamlessly merged from the 'categories' sheet into the 'orderdetails' sheet, setting the stage for a detailed revenue assessment.
+
+
+<img width="269" alt="image" src="https://github.com/Nomso-nm/Global-Online-Sales-/assets/150568749/d387da40-8633-4137-ba3f-0f27d7a9ca42">
+
+The pivot table created from the enriched 'orderdetails' dataset, with 'CategoryName' in the rows and 'Revenue' in the values, has provided a quantitative breakdown of revenue by category. Upon sorting this table in descending order of revenue, we gained a clear perspective on category performance. Dairy Products emerged as the top revenue-generating category with a commanding total of $23,589.9. Confections stood out with $22,869.1 in revenue. Beverages also showed significant revenue generation, amounting to $19,617.5. Meat/Poultry had a substantial revenues of $14,154.1 while Seafood was $13,502.3. Grains/Cereals had the least revenue at $3111.8
+
+The insights from this revenue analysis provide actionable intelligence for strategic decision-making. A business might consider amplifying focus on high-performing categories, optimizing supply chain efficiencies, and allocating marketing resources to bolster the sales of the less performing categories. The analysis affords a comprehensive view of where the revenue concentration lies within the product categories, enabling a business to tailor its strategies to harness the strengths and address the weaknesses reflected in the sales data. 
+
+
+**The average order value** 
+
+A pivot table was created to meticulously aggregate revenue across the unique orders, pinpointing the average monetary amount that customers spent per order. The data was sorted with Order ID in the rows, ensuring each transaction was distinctly accounted for, and Revenue was placed in the values area, set to calculate the average. This configuration provided a clear perspective on the overall spending behavior of customers per transaction. The calculated average order value (AOV) across all transactions was determined to be $564.61. This figure represents the mean spending amount per order when taking all sales into account over the given period. It is an essential metric that encapsulates the revenue-generating efficiency of sales operations. 
+
+<img width="395" alt="image" src="https://github.com/Nomso-nm/Global-Online-Sales-/assets/150568749/d3ca70c7-7f74-4ed3-af5c-1c9b80b73b7e">
+
+**Customers with the highest purchase frequency** 
+
+The pivot table analysis focusing on identifying customers with the highest purchase frequency reveals key insights into customer behavior and engagement with the business. By placing 'CustomerName' in the rows and aggregating the 'OrderID' count in the values area, we effectively quantify the number of purchases made by each customer. Sorting these results in descending order allows us to immediately identify the top customers who are engaging most frequently with the business through their number of orders. The top 5 products purchased by customers were, Rattlesnake Canyon Grocery, Tortuga Restaurante, QUICK-Stop, Hungry Owl All-Night Grocers and Romero y tomillo. The clustered bar char below visualises the customers purchase frequency. 
+
+<img width="982" alt="image" src="https://github.com/Nomso-nm/Global-Online-Sales-/assets/150568749/b0edfc91-6dfa-4c65-b62d-9bfd16c5504e"> 
+
+
+**Sales trend**
+
+Below is a line chart that visualises the product sales trend. 
+
+<img width="1167" alt="image" src="https://github.com/Nomso-nm/Global-Online-Sales-/assets/150568749/044bcc14-706f-43b9-9437-cfd4fd3049f1">
+
+
+The data presents daily revenue figures spanning from July to October of a given year. There is a notable fluctuation in daily sales, despite the daily fluctuations, there appears to be an upward trajectory in total monthly revenue over the period analysed. Each month’s end sum of revenue is higher than the previous, with the exception of September which is slightly less than August. Certain days experience significantly high revenues, such as the peaks observed in late July, mid-August, late September, and early October. Finally, there is a tendency for revenue to increase towards the end of the month, particularly noticeable in July and September. 
+
+
+**Sales perfroamce accross different countries**
+
+
+The data below showcases the sum of revenue generated from various countries. This information is critical in understanding market performance and identifying key geographical areas for business growth. 
+
+<img width="268" alt="image" src="https://github.com/Nomso-nm/Global-Online-Sales-/assets/150568749/f040dba9-fe65-4711-a835-c9c500855bb8">
+
+> The USA and Germany lead the revenue generation significantly, with the USA at 25,205.5 and Germany at 21,521.3.
+> Brazil, Belgium, and Ireland fall into the middle tier, with revenues ranging from approximately 6,000 to 14,000. These countries represent significant markets but have less      revenue compared to the top performers.
+> Venezuela, Austria, and France, followed by Mexico and Switzerland, show moderate revenue numbers ranging from about 3,900 to 5,800.
+> Sweden, Finland, Spain, the UK, and Italy are at the lower end of the revenue spectrum presented, with Italy generating the least revenue at 1,256.0.
+
+
+**Average product price across different categories**
+
+<img width="270" alt="image" src="https://github.com/Nomso-nm/Global-Online-Sales-/assets/150568749/d36c1c30-8338-4b1f-8fd6-1d0e62303334">
+
+The data presents the average price of products across various food categories. These categories range from meats and produce to beverages. The prices vary significantly, indicating a diverse range of value among the different types of food products.
+
+> Meat/Poultry is the category with the highest average price at 47.5, suggesting that these products are generally more expensive than other categories.
+> Produce and Confections also have higher-than-average prices at 37.7 and 31.3 respectively.
+> Dairy Products and Grains/Cereals have moderate average prices, close to the overall average of 26.9.
+> Condiments, Seafood, and Beverages fall below the overall average price.
+> Beverages have the lowest average price of 17.9
+> The average product prices across categories reflect a range from premium to more economical options, with meat and poultry being the most expensive on average and beverages the least. This variance allows businesses to strategize on product positioning, marketing, and inventory management to cater to different consumer segments and maximize profitability.
+
+
+**Suppliers contribution to the product catalog**
+
+
+<img width="381" alt="image" src="https://github.com/Nomso-nm/Global-Online-Sales-/assets/150568749/8ba63e4a-c4db-4826-a466-41931a1e909b">
+
+The data above presents a count of products offered by various suppliers. This list gives an insight to see which suppliers contribute most extensively to the product catalog of a business or market. 
+> Pavlova, Ltd. is the top contributor to the product catalog, with 20 items, followed by Plutzer Lebensmittelgroßmärkte AG with 15 items. Formaggi Fortini s.r.l. and Specialty     Biscuits, Ltd. are also significant contributors, with 12 products each.
+> Norske Meierier, Gai pâturage, and Leka Trading each offer 11 products, which places them in a strong position within the product catalog.
+> New England Seafood Cannery, Gday, Mate, Exotic Liquid, and Bigfoot Breweries, each with 8 products, contribute a moderate number of items to the catalog.
+> At the lower end, suppliers like Ma Maison, Tokyo Traders, Nord-Ost-Fisch Handelsgesellschaft mbH, Heli Süßwaren GmbH & Co. KG, Cooperativa de Quesos Las Cabras, Grandma Kellys   Homestead, Lyngbysild, Escargots Nouveaux, and PB Knäckebröd AB contribute between 1 to 4 products.
+> The data reveals that a few suppliers, such as Pavlova, Ltd. and Plutzer Lebensmittelgroßmärkte AG, are major contributors to the product catalog, offering a wide array of choices to the business and its customers. Understanding the contribution of each supplier is crucial for inventory management, strategic planning, and maintaining a balanced and appealing product catalog.
+
+
+**Average quantity of products sold per order**
+
+
+<img width="294" alt="image" src="https://github.com/Nomso-nm/Global-Online-Sales-/assets/150568749/b8e5280a-6bb3-47d7-95e6-a9c2636bb522">
+
+The data indicates that the average quantity of products sold per order is 21.11. This figure gives us an understanding of the typical order size from a quantitative perspective. An average order quantity of 21.11 suggests that each order, on average, comprises over 21 items. From a supply chain perspective, a higher average order quantity can affect inventory management, requiring robust stock levels to fulfill orders and possibly influencing bulk purchase discounts from suppliers. For the business, understanding the average order quantity can help in tailoring marketing strategies, setting minimum order quantities, and offering volume discounts to maintain or increase this average. Adequate stock levels must be maintained to cater to the average order size, ensuring customer demand is met without significant backorders or stockouts. The average quantity of products sold per order is a key metric that indicates the volume of products that customers are purchasing in each transaction. It has direct implications for inventory management, pricing strategies, and marketing initiatives. Understanding this metric can help a business optimize its operations and better meet customer needs.
+
+**The relationship between the price of products and their sales performance**
+
+To answer this question the analysis was done with a pivot table. It represented a relationship between the price of products (Row Labels) and their corresponding total revenue (Sum of Revenue). The data does not show a direct correlation where higher prices always equate to higher revenue or vice versa. Instead, there are specific price points that outperform others, indicating that pricing strategy should be nuanced and product-specific. There are high-revenue-generating price points across the spectrum, indicating a varied market with different segments willing to pay different prices. A detailed analysis of the cost structure, market demand, and competitive pricing is essential to determine the optimal pricing strategy for each product.
+
+
+**Data Visualisation** 
+
+![00BF2F2D-FAE8-4F55-9866-6A14816BB7CB_1_105_c](https://github.com/Nomso-nm/Global-Online-Sales-/assets/150568749/896f0dc8-2ac0-4a34-8556-1c9a1bc388fd)
+
+**Conclusion** 
+
+The comprehensive analysis of the "Nuestro Amazon" e-commerce dataset has provided vital insights across various key performance indicators. The project successfully identified the top-selling products, revenue-generating categories, and average order value, as well as examined customer purchase frequency, seasonal sales trends, geographical sales performance, product pricing across categories, supplier contributions to the product catalog, average quantity sold per order, and the intricate relationship between product pricing and sales performance. These findings equip the business with actionable data to inform strategic decisions, optimize sales strategies, enhance customer engagement, and ultimately drive growth in the competitive e-commerce landscape. Through the adept use of pivot tables and VLOOKUP functions, the project underscores the significance of a data-driven approach in understanding and capitalizing on market dynamics.
+
+**Ackowledgement** 
+
+I would like to express my sincere gratitude to Javier Sánchez P. for providing the invaluable dataset on Kaggle that formed the backbone of this analysis. The rich, detailed data allowed for an in-depth exploration into the multifaceted world of e-commerce, enabling critical insights that drive data-driven decision-making. This project's findings are a testament to the robustness of the dataset and the power of collaborative data sharing platforms like Kaggle.
 
 
 
